@@ -122,7 +122,7 @@ class TodoListViewController: UITableViewController {
         
         if let additionalPredicate = predicate {
             
-            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, predicate!])
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, additionalPredicate])
             
         } else {
             
